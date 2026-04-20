@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>С Днем космонавтики!</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<div class="orbit"></div>
+<div class="orbit-two"></div>
+<div class="orbit-three"></div>
+<div class="comet"></div>
+<div class="planet"></div>
+<img src="shared/icons/sputnik.svg" class="sputnik" alt="Спутник">
+<main class="wrapper">
+  /<section class="hero">
+  <div class="ribbon-section">
+  <div class="ribbon-left">
+    <span class="star">★</span> 12 апреля· праздник мечты, мужества и звезд
+    <span class="star">★</span>
+  </div>
+  <div class="ribbon-right">
+    <span class="star">★</span> Цифровой марафон 2026
+    <span class="star">★</span>
+  </div>
+</div>
+  <div class="hero-grid">
+    <div>
+      <h1 class="title">С <span class="gold">Днем</span><br>космонавтики!</h1>
+      <p class="subtitle">
+        Пусть сердце смело стремится вперед, идеи взлетают выше облаков, а каждый новый день открывает
+        собственную орбиту вдохновения, открытий и побед.
+      </p>
+      <div class="hero-badges">
+        <div class="badge">Время первых</div>
+        <div class="badge">Мечтай масштабно</div>
+        <div class="badge">Держи курс к звездам</div>
+      </div>
+    </div>
+
+
+    <div class="poster-art" aria-hidden="true">
+      <div class="sunburst"></div>
+      <div class="rocket-wrap">
+        <div class="rocket-trail"></div>
+        <img src="shared/icons/rocket.svg" class="rocket-svg" alt="Ракета">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <h2 class="section-title">Поздравление</h2>
+  <div class="greeting">
+    Дорогие покорители мечты, с <strong>Днем космонавтики</strong>!
+    Пусть каждый день будет стартом к новым высотам! 12 апреля — особенная дата. Именно в этот день в 1961 году Юрий Гагарин, облетев Землю на корабле «Восток-1», не только открыл эру космических полётов, но и доказал: невозможное — возможно. Его знаменитое «Поехали!» стало символом смелости и веры в мечту. Желаю, чтобы ваша жизнь была яркой траекторией, где каждый виток приближает к звёздам, а любые трудности — лишь гравитация, которую вы с лёгкостью преодолеете! Пусть вдохновение будет вашим топливом, а рядом всегда будут те, кто поддержит на старте и встретит после полёта. С Днём космонавтики!
+  </div>
+</section>
+<div class="ticker" aria-label="Бегущая строка">
+  <div class="ticker-track">
+    <span>★ Поехали! ★</span>
+    <span>Слава покорителям космоса ★</span>
+    <span>Мечтай. Дерзай. Взлетай. ★</span>
+    <span>12 апреля — День космонавтики ★</span>
+    <span>Поехали! ★</span>
+    <span>Слава покорителям космоса ★</span>
+    <span>Мечтай. Дерзай. Взлетай. ★</span>
+    <span>12 апреля — День космонавтики ★</span>
+  </div>
+</div>
+<section class="section">
+  <h2 class="section-title">Лица эпохи и полет мечты</h2>
+  <div class="gallery">
+    <article class="photo-card">
+      <img src="shared/pictures/gagarin.jpeg" alt="Юрий Гагарин">
+      <div class="photo-label">
+        <h3>Юрий Гагарин</h3>
+        <p>Первый человек в космосе — символ отваги, улыбки и великого начала космической эры.</p>
+      </div>
+    </article>
+
+
+    <article class="photo-card">
+      <img src="shared/pictures/rocket-launch.jpeg" alt="Ракета на старте">
+      <div class="photo-label">
+        <h3>Ракета на старте</h3>
+        <p>Мгновение, когда земля остается внизу, а впереди — только свет, высота и звездный путь.</p>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="section">
+  <h2 class="section-title">Космические пятнашки</h2>
+  <div class="game-grid">
+    <div class="game-panel">
+      <div id="puzzle" class="puzzle-board" aria-label="Игра пятнашки"></div>
+      <div class="hint">Нажимай на плитку рядом с пустой клеткой, чтобы собрать космическую картинку.</div>
+    </div>
+
+
+    <div class="game-info">
+      <p>
+        В этой версии классической игры тебя ждет <strong>космическая мозаика</strong>.
+        Собери изображение, переставляя фрагменты по одному, и открой праздничное сообщение.
+      </p>
+      <p>
+        Игра начинается с перемешанной, но решаемой комбинации. Для большего настроения здесь много сияния,
+        движения и легкой атмосферы ретро-футуризма.
+      </p>
+
+
+      <div class="controls">
+        <button id="shuffleBtn">Перемешать</button>
+        <button id="solveBtn" class="secondary">Помочь собрать</button>
+      </div>
+
+
+      <div class="stats">
+        <div class="stat"><span>Ходы</span><strong id="moves">0</strong></div>
+        <div class="stat"><span>Побед</span><strong id="wins">0</strong></div>
+      </div>
+
+
+      <div class="preview" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+<div class="success" id="successModal" role="dialog" aria-modal="true" aria-labelledby="successTitle">
+  <div class="success-card">
+    <h3 id="successTitle">Поехали!</h3>
+    <p>
+      Космическая картинка собрана! Пусть каждый твой день будет похож на удачный старт:
+      яркий, вдохновляющий и устремленный к новым высотам.
+    </p>
+    <button id="closeModal">Продолжить праздник</button>
+  </div>
+</div>
+<div class="footer">★ С праздником, земляне! Пусть путь к звездам начинается с мечты ★</div>
+<script src="js/script.js"></script>
+
+</body>
+</html>
